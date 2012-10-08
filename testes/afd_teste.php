@@ -1,17 +1,8 @@
-<?php
-	require_once('../simpletest/autorun.php');
-	require_once('../classes/lib/afd.php');
+﻿<?php
+	require_once('simpletest/autorun.php');
+	require_once('../class/afd.php');
 	
 	class TesteDeAFD extends UnitTestCase{
-		//Sempre iniciar com uma lista de testes
-		//Sempre iniciar pelo mais fácil
-		//Escreva primeiro o teste
-		//Escreva primeiro o teste assertivo
-		//Mantra: Vermelho -> Verde -> Refatorar
-		//Simula até construir(Refatorar³³³)
-		//Buscar o verde o mais rápido possível
-		//baby steps
-
 		/*
 		 * Lista de Testes (Planejatamento da classe):
 		 *
