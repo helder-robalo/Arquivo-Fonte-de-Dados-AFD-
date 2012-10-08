@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 	/**
 	*
 	* Classe para validação de Arquivo Fonte de Dados (AFD) 
@@ -109,10 +109,8 @@
 				$retorno = true;
 			else
 				return false;
-			$padrao = "/^0{9}.*1.*[1-2].*([0-9]{11}.*([ ]{3}|[0-9]{3}))([ ]{12}|[0-9]{12}).*[a-zA-Zà-úÀ-Ú ]{150}.*[0-9]{45}/";
+			$padrao = "/^0{9}.*1.*[1-2].*([0-9]{11}.*([ ]{3}|[0-9]{3}))([ ]{12}|[0-9]{12})[a-zA-Zà-úÀ-Ú ]{150}.*[0-9]{45}/";
 			
-			//print_r(var_dump(preg_match($padrao, $string)));
-
 			if(preg_match($padrao, $string)){
 				try {
 					$tipoValidacao = substr($string, 10,1);
